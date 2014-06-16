@@ -1,0 +1,30 @@
+
+<div style="text-align: center; margin: 0 auto;">
+	<center>
+		<form method="post" action="/course/search">
+		<input type="text" class="search-query span2 input-xlarge" style="width: 350px;" name="q" placeholder="Search by course title, skills, technologies, etc." required>
+		<br />
+		<input type="submit" class="btn btn-success" style="margin-top: 10px;" value="Search" />
+		</form>
+	</center>
+</div>
+<div class="clearfix"></div>
+
+<br /><br />
+<center><h3>Latest Courses...</h3></center>
+<hr />
+<% dataSet.featuredCourses.forEach( function( c ){ %>
+	<div class="span4">
+		<center>
+			<h4><%=: c.title | capitalize %></h4>
+			<img src="<%= c.imageURL %>" />
+			<br /><br />
+			<p>
+				<%= c.description %>
+			</p>
+			<p>
+				<a href="/course/<%=c._id %>" class="btn btn-success">More Info &rarr;</a>
+			</p>
+		</center>
+	</div>
+<% }); %>

@@ -1,0 +1,30 @@
+<form name="createserviceform" action="https://howmuch-c9-iglesias.c9.io/service/create" method="post">
+    <p>
+        <label>Service Name:</label>
+        <input type="text" name="name" />
+    </p>
+    <p>
+        <label>Lowest Price:</label>
+        <input type="text" name="lowestPrice" />
+    </p>
+    <p>
+        <label>Social Discount:</label>
+        <input type="text" name="socialDiscount" />
+    </p>
+    <p>
+        <label>Referral Discount:</label>
+        <input type="text" name="referralDiscount" />
+    </p>
+    <p>
+        <label>Billing Type:</label>
+        <select name="billingType">
+            <option value="monthly">Monthly</option>
+            <option value="yearly">Yearly</option>
+            <option value="onetime">One Time Cost</option>
+        </select>
+    </p>
+    <p>
+        <input type="submit" value="Create Service" />
+    </p>
+    
+</form>

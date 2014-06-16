@@ -1,0 +1,20 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.3.5",
+    "ejs": "*",
+    "express-partials": "~0.1.1",
+    "mongoose": "~3.8.0",
+    "dwolla": "~0.1.1",
+    "passport": "~0.2.0",
+    "passport-dwolla": "~0.1.2",
+    "mysql": "^2.1.1",
+    "express-form": "^0.12.2",
+    "stormpath": "^0.1.2"
+  }
+}
